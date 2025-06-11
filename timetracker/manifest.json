@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Time Tracker Extension",
+  "version": "0.2.0",
+  "description": "Tracks time and displays stats on an options page.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "View Time Tracker Stats"
+  },
+  "options_page": "options/options.html"
+}

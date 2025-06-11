@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Tracker Statistics</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Tracker Statistics</h1>
+
+        <div class="filters">
+            <label>
+                <input type="radio" name="period" value="daily" checked> Daily
+            </label>
+            <label>
+                <input type="radio" name="period" value="weekly"> Weekly
+            </label>
+            <label>
+                <input type="radio" name="period" value="monthly"> Monthly
+            </label>
+            <label>
+                <input type="radio" name="period" value="allTime"> All Time
+            </label>
+        </div>
+
+        <div id="statsContainer">
+            <p id="loadingMessage">Loading data...</p>
+            <ul id="statsList"></ul>
+            <p id="noDataMessage" style="display:none;">No data available for this period.</p>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
